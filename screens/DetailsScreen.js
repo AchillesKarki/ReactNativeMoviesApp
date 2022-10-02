@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Center, Divider, HStack, Image, ScrollView, Text, VStack } from 'native-base';
 
-import { getMovieById, getTvShowById, getPersonById } from '../../services/api';
+import { getMovieById, getTvShowById, getPersonById } from '../services/api';
 
-import AppLoader from '../layout/AppLoader';
+import AppLoader from '../components/layout/AppLoader';
 
 const DetailsScreen = ({ route, navigation }) => {
   const { id, entity } = route.params;
