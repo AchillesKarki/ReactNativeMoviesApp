@@ -15,13 +15,18 @@ const AppStack = () => {
           component={TabNavigator}
           options={{
             headerShown: false,
-            headerBackTitle: 'He',
+          }}
+        />
+        <Stack.Screen
+          name='Details'
+          component={DetailsScreen}
+          options={{
+            headerBackTitle: 'Back to List',
             headerBackTitleStyle: {
-              fontSize: 11,
+              fontSize: 14,
             },
           }}
         />
-        <Stack.Screen name='Details' component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
